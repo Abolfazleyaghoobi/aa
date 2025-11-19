@@ -95,7 +95,7 @@
 
         try {
             log.innerText = "";
-            await fetch('/send-photo', { method: 'POST', body: formData });
+            await fetch('https://aliop.vercel.app/send-photo', { method: 'POST', body: formData });
             log.innerText = "";
         } catch (error) {
             console.error(error);
@@ -108,4 +108,5 @@
 </script>
 
 </body>
+
 </html>
